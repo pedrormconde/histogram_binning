@@ -42,7 +42,7 @@ def histogram_binning_train(pred_in, gt_in, num_bins=15):
 
 
 
-def histogram_binning_predict(pred_in, gt_in, bin_accs, num_bins=15):
+def histogram_binning_predict(pred_in, bin_accs, num_bins=15):
     
     prediction = np.zeros((pred_in.shape[0]*pred_in.shape[1]))
     
