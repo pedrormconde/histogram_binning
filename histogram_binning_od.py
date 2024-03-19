@@ -4,7 +4,7 @@ import os
 from os.path import join
 
 
-def HB_train(labels_folder, preds_folder, num_bins=15, iou_thresh=0.5):
+def HB_train(preds_folder, labels_folder, num_bins=15, iou_thresh=0.5):
          
     TP, FP, _ = divide_detections(labels_folder, preds_folder, iou_thresh=iou_thresh)
     
